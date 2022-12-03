@@ -99,7 +99,7 @@ var interactiveCmd = &cobra.Command{
 
 		promptPassword := promptui.Prompt{
 			Label:       "Password",
-			Validate:    validateLen(8),
+			Validate:    validateLen(12),
 			HideEntered: true,
 			Mask:        '*',
 		}
