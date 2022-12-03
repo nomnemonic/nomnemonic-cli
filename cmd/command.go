@@ -9,6 +9,7 @@ import (
 
 	"github.com/manifoldco/promptui"
 	"github.com/nomnemonic/nomnemonic"
+
 	"github.com/spf13/cobra"
 )
 

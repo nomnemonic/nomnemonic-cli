@@ -10,6 +10,13 @@ Generate deterministic mnemonic words
 go install github.com/nomnemonic/nomnemonic-cli@latest
 ```
 
+To install an earlier version:
+```
+go install github.com/nomnemonic/nomnemonic-cli@v0.1.0
+```
+
+All the changes will be backward compatible with semantic versioning. Once the library gets to `v1.0.0`, it will support any version with an optional input from user.
+
 ## Usage
 
 ### Flags (mode)
@@ -18,9 +25,9 @@ go install github.com/nomnemonic/nomnemonic-cli@latest
 12, 15, 18, 21, 24
 
 ```
-nomnemonic-cli generate --identifier test@example --password test1234 --passcode 001234 --size 12
+nomnemonic-cli generate --identifier test@example --password test1234 --passcode 001234 --size 24
 
-# arch token artist poem soup people you immune okay castle defense vintage fever stage chalk bounce motor regret sad crisp undo warrior shoe act
+# damp tree issue few elegant trim public mouse relief excite any horror leisure unusual another trip creek retreat pact exotic wrong amazing cactus nest
 ```
 
 **Shorthand letters**
@@ -28,7 +35,7 @@ nomnemonic-cli generate --identifier test@example --password test1234 --passcode
 ```
 nomnemonic-cli generate -i test@example -p test1234 -c 001234 -s 12
 
-# arch token artist poem soup people you immune okay castle defense vintage fever stage chalk bounce motor regret sad crisp undo warrior shoe act
+# sadness web holiday letter you what raw flight erupt era response spray
 ```
 
 ### Interactive (mode)
