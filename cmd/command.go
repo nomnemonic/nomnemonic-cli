@@ -78,7 +78,7 @@ var interactiveCmd = &cobra.Command{
 			return func(input string) error {
 				input = strings.Trim(input, " ")
 				if len(input) < length {
-					return fmt.Errorf("Idenfier must be at least %d chars", length)
+					return fmt.Errorf("Must be at least %d chars", length)
 				}
 				return nil
 			}
@@ -135,9 +135,19 @@ var interactiveCmd = &cobra.Command{
 
 		// Passcode
 
+		validateExactLen := func(length int) func(input string) error {
+			return func(input string) error {
+				input = strings.Trim(input, " ")
+				if len(input) != length {
+					return fmt.Errorf("Must be exactly %d digits", length)
+				}
+				return nil
+			}
+		}
+
 		promptPasscode := promptui.Prompt{
 			Label:       "Passcode",
-			Validate:    validateLen(6),
+			Validate:    validateExactLen(6),
 			HideEntered: true,
 			Mask:        '#',
 		}
