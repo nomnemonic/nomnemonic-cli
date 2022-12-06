@@ -31,7 +31,7 @@ All the changes will be backward compatible with semantic versioning. Once the l
 ```
 nomnemonic-cli generate --identifier test@example --password test12345678 --passcode 001234 --size 24
 
-# damp tree issue few elegant trim public mouse relief excite any horror leisure unusual another trip creek retreat pact exotic wrong amazing cactus nest
+# drop captain ring slice label oyster galaxy jacket online debris security doctor drive gadget nominee film tunnel away network spirit duty anger slender train
 ```
 
 **Shorthand letters**
@@ -39,7 +39,7 @@ nomnemonic-cli generate --identifier test@example --password test12345678 --pass
 ```
 nomnemonic-cli generate -i test@example -p test12345678 -c 001234 -s 12
 
-# sadness web holiday letter you what raw flight erupt era response spray
+# during wave century color elevator essay aerobic lunar knife hope style buffalo
 ```
 
 ### Interactive (mode)
