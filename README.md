@@ -12,6 +12,10 @@ go install github.com/nomnemonic/nomnemonic-cli@latest
 
 To install an earlier version:
 ```
+# v0.2.0 / algorithm 2.0.0
+go install github.com/nomnemonic/nomnemonic-cli@v0.2.0
+
+# v0.1.0 / algorithm 1.0.0
 go install github.com/nomnemonic/nomnemonic-cli@v0.1.0
 ```
 
