@@ -33,6 +33,17 @@ var rootCmd = &cobra.Command{
 		"cryptographic hash function to generate the words.",
 }
 
+// versionCmd represents the version command
+var versionCmd = &cobra.Command{
+	Use:   "version",
+	Short: "Library and algorithm versions",
+	Long:  "Displays the library and algorithm version",
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("Library v" + nomnemonic.Version)
+		fmt.Println("Algorithm v" + nomnemonic.VersionAlgorithm)
+	},
+}
+
 // generateCmd represents the generate command
 var generateCmd = &cobra.Command{
 	Use:   "generate",
@@ -194,6 +205,7 @@ func initCommands() {
 	rootCmd.CompletionOptions.DisableDefaultCmd = true
 	rootCmd.AddCommand(generateCmd)
 	rootCmd.AddCommand(interactiveCmd)
+	rootCmd.AddCommand(versionCmd)
 }
 
 func initWords() {
