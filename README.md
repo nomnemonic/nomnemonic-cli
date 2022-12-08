@@ -49,6 +49,15 @@ To run interactive mode:
 nomnemonic-cli interactive
 ```
 
+## Docker (run with isolated container)
+
+Build & run with docker on the `nomnemonic-cli` project root path:
+
+```
+docker build -t nomnemonic-cli .
+docker run --rm -it nomnemonic-cli interactive
+```
+
 ## Algorithm
 
 Please refer to [SPEC.md](https://github.com/nomnemonic/nomnemonic/blob/main/SPEC.md)
